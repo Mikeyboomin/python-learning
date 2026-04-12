@@ -1,6 +1,6 @@
 # Python Learning Journey
 
-I'll be documenting my progress as I learn Python from scratch, working toward 
+I'll be documenting my progress as I learn Python from scratch, working toward a 
 backend engineering career and eventually building onchain.
 
 **Started:** 11th April 2026  
