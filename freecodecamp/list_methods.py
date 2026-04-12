@@ -74,3 +74,17 @@ print(programming_languages.index('Rust')) # 0
 # If the element cannot be found, then Python throws a ValueError
 # There are a few more methods for Python lists
 # but this initial list of methods is a good place to start
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(numbers[1::2])
+
+one_to_five = [1, 2, 3, 4, 5]
+six_to_ten = [6, 7, 8, 9, 10]
+one_to_five.append(six_to_ten) # this actually alter the list
+print(one_to_five)
+
+one_to_five = [1, 2, 3, 4, 5]
+six_to_ten = [6, 7, 8, 9, 10]
+one_to_five.extend(six_to_ten) # this actually alter the list
+print(one_to_five)
+
