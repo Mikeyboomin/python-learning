@@ -1,17 +1,3 @@
-# 2 → success
-# 3 → redirect
-# 4 → client issue
-# 5 → server issue
-
-# Build something that processes this data and produces output in exactly this structure:
-# Total requests: 9
-# Successful: 3
-# Redirects: 1
-# Client errors: 2
-# Server errors: 3
-# Most frequent status: 500
-# [200, 200, 404, 500, 200, 404, 301, 500, 500]
-
 status_codes = [500, 500, 404, 200, 500, 404, 301, 200, 200]
 code_success = 200
 code_redirect = 301

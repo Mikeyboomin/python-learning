@@ -17,7 +17,7 @@ def log_filter(logs):
         if 'ERROR' in log:
             error_count += 1
             error_logs += str(error_count) + '. ' + log[7:] + '\n'
-            error_report = f'Error Report\n------------\n{error_logs}\n\nTotal errors: {error_count}'
+    error_report = f'Error Report\n------------\n{error_logs}\n\nTotal errors: {error_count}'
     return error_report    
     
 
