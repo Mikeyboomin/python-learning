@@ -23,9 +23,9 @@ def user_access_checker(users):
             active_admins.append(name)
         elif role == 'editor' and status:
             active_editors.append(name)
-        elif role == 'editor' or role == 'viewer' and not status:
+        elif not status:
             inactive_users.append(name)
 
-    return f"Active Admins: {", ".join(active_admins)}\nActive Editors: {", ".join(active_editors)}\nInactive users: {", ".join(inactive_users)}"        
+    return f"Active Admins: {', '.join(active_admins)}\nActive Editors: {', '.join(active_editors)}\nInactive users: {', '.join(inactive_users)}"        
 
 print(user_access_checker(users))
