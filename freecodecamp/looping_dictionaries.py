@@ -5,6 +5,14 @@ products = {
     'Headphones': 70,
 }
 
+cars = {
+    'Ferrari' : 4500000,
+    'Toyota' : 25000,
+    'BMW' : 150000,
+    'Rolls Royce' : 2500000
+
+}
+
 """
 You write for, the loop variable (price in this case), products.values() to get all the values of the products
  dictionary, a colon, and then the body of the loop, where you can apply any logic to the values. In this case, 
@@ -14,6 +22,9 @@ You write for, the loop variable (price in this case), products.values() to get 
 for price in products.values():
     print(price)
 
+for price in cars.values():
+    print(price)    
+
 # And here is the output. As you can see, each value is printed to the console, one by one.
 
 # You just need to iterate over products.keys() or products directly,  if you need to iterate over the keys of a dictionary.
@@ -21,16 +32,25 @@ for price in products.values():
 for product in products.keys():
     print(product)
 
+for car in cars.keys():
+    print(car)    
+
 # Or
 
 for product in products:
     print(product)
+
+for car in cars:
+    print(car)    
 
 # And this works exactly the same for key-value pairs if you need to iterate over the keys 
 # and their corresponding values simultaneously. 
 
 for product in products.items():
     print(product)
+
+for car in cars.items():
+    print(car)    
 
 """
 ('Laptop', 990)
@@ -44,6 +64,9 @@ for product in products.items():
 
 for product, price in products.items():
     print(product, price)
+
+for car, price in cars.items():
+    print(car, price)
 
 """
 Laptop 990
@@ -67,6 +90,11 @@ for product, price in products.items():
 
 print(products)
 
+for car, price in cars.items():
+    cars[car] = round(price * 0.8)
+
+print(cars)    
+
 """
 Then, if we print the dictionary, we would get these key-value pairs with the discounted prices:
 
@@ -83,6 +111,9 @@ Then, if we print the dictionary, we would get these key-value pairs with the di
 for product in enumerate(products):
     print(product)
 
+for car in enumerate(cars):
+    print(car)    
+
 # But the enumerate() function also assigns an integer to each key, so we get tuples with the integer and the key.
 # 
 # Here is the output:
@@ -97,9 +128,15 @@ for product in enumerate(products):
 for index, product in enumerate(products):
     print(index, product)
 
+for index, car in enumerate(cars):
+    print(index, car)    
+
 # If you need to iterate over the values, you can replace products by products.values()
 # 
 for price in enumerate(products.values()):
+    print(price)
+
+for price in enumerate(cars.values()):
     print(price)
 
 """
@@ -114,6 +151,9 @@ for price in enumerate(products.values()):
 for index, price in enumerate(products.values()):
     print(index, price)
 
+for index, price in enumerate(cars.values()):
+    print(index, price)    
+
 # This will be the output. You can use them as you need to in your code:
 
 # 0 990
@@ -126,6 +166,8 @@ for index, price in enumerate(products.values()):
 for index, product in enumerate(products.items()):
     print(index, product)
 
+for index, car in enumerate(cars.items()):
+    print(index, car)
 # we get the index followed by a tuple that contains the key and the value of the corresponding key-value pair
 # 
 # 0 ('Laptop', 990)
@@ -139,6 +181,9 @@ for index, product in enumerate(products.items()):
 
 for index, product in enumerate(products.items(), 1):
     print(index, product)
+
+for index, car in enumerate(cars.items(), 1):
+    print(index, car)    
 
 """
 You can see this change in the output. Now the first integer is 1 instead of 0:
